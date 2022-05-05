@@ -7,19 +7,28 @@ public class new_branch_01 {
     float cgpa;
     String address;
     String hometown;
+    int salary;
 
-
-    int age;
-
-    public new_branch_01(int roll, String name, float cgpa, String address, int age,String hometown;) {
-
+    public new_branch_01(int roll, String name, float cgpa, String address, String hometown, int salary, int age) {
         this.roll = roll;
         this.name = name;
         this.cgpa = cgpa;
         this.address = address;
+        this.hometown = hometown;
+        this.salary = salary;
         this.age = age;
-        this.hometown=hometown;
     }
+
+    int age;
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
     public int getAge() {
         return age;
     }
