@@ -6,23 +6,25 @@ public class new_branch_01 {
     String name;
     float cgpa;
     String address;
+    String hometown;
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
 
     int age;
 
-    public new_branch_01(int roll, String name, float cgpa, String address, int age) {
+    public new_branch_01(int roll, String name, float cgpa, String address, int age,String hometown;) {
 
         this.roll = roll;
         this.name = name;
         this.cgpa = cgpa;
         this.address = address;
+        this.age = age;
+        this.hometown=hometown;
+    }
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
         this.age = age;
     }
 
@@ -32,6 +34,14 @@ public class new_branch_01 {
 
     public void setRoll(int roll) {
         this.roll = roll;
+    }
+
+    public String getHometown() {
+        return hometown;
+    }
+
+    public void setHometown(String hometown) {
+        this.hometown = hometown;
     }
 
     public String getName() {
