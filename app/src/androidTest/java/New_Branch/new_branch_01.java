@@ -6,13 +6,23 @@ public class new_branch_01 {
     String name;
     float cgpa;
     String address;
+    String department;
 
-    public new_branch_01(int roll, String name, float cgpa, String address) {
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public new_branch_01(int roll, String name, float cgpa, String address, String department) {
 
         this.roll = roll;
         this.name = name;
         this.cgpa = cgpa;
         this.address = address;
+        this.department= department;
     }
 
     public int getRoll() {
