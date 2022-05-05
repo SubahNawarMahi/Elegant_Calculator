@@ -6,35 +6,23 @@ public class new_branch_01 {
     String name;
     float cgpa;
     String address;
-    String hometown;
-    int salary;
+    String department;
 
-    public new_branch_01(int roll, String name, float cgpa, String address, String hometown, int salary, int age) {
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public new_branch_01(int roll, String name, float cgpa, String address, String department) {
+
         this.roll = roll;
         this.name = name;
         this.cgpa = cgpa;
         this.address = address;
-        this.hometown = hometown;
-        this.salary = salary;
-        this.age = age;
-    }
-
-    int age;
-
-    public int getSalary() {
-        return salary;
-    }
-
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
+        this.department= department;
     }
 
     public int getRoll() {
@@ -43,14 +31,6 @@ public class new_branch_01 {
 
     public void setRoll(int roll) {
         this.roll = roll;
-    }
-
-    public String getHometown() {
-        return hometown;
-    }
-
-    public void setHometown(String hometown) {
-        this.hometown = hometown;
     }
 
     public String getName() {
